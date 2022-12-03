@@ -4,8 +4,8 @@ project.ext.baseScriptDir = new File(project.buildscript.sourceFile, "../../buil
 apply from: new File(project.baseScriptDir, "/common.gradle")
 
 dependencies {
-	compile ":neurotec-core"
-	compile ":neurotec-licensing"
-	compile 'net.java.dev.jna:jna:5.5.0'
-	compile project.modules."commons-io"
+	implementation ":neurotec-core"
+	implementation ":neurotec-licensing"
+	implementation 'net.java.dev.jna:jna:5.5.0'
+	implementation project.modules."commons-io"
 }

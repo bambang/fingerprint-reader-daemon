@@ -50,7 +50,7 @@ gradle.projectsEvaluated {
  */
 String generateClasspath() {
 	StringBuilder classpath = new StringBuilder();
-	for (def dependency : configurations.runtime.allDependencies) {
+	for (def dependency : configurations.runtimeOnly.allDependencies) {
 		classpath.append(dependency.getName()).append(".jar ");
 	}
 	return classpath.toString();
@@ -124,7 +124,7 @@ task copyScripts(type: Copy) {
 tasks.build.dependsOn(copyScripts)
 
 task copyRuntimeDependencies(type: Copy) {
-	from configurations.runtime
+	from configurations.runtimeOnly
 	into project.productBinJavaDir
 	exclude "**/neurotec-*.jar"
 	exclude "**/jna.jar"

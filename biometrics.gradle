@@ -8,15 +8,17 @@ tasks.prepareResources.setEnabled(false)
 tasks.copyScripts.setEnabled(false)
 
 dependencies {
-	compile ":neurotec-media"
-	compile ":neurotec-media-processing"
-	compile ":neurotec-biometrics"
-	compile ":neurotec-biometrics-client"
-	compile ":neurotec-devices"
-	compile "com.sparkjava:spark-core:2.8.0"
-    compile "com.sparkjava:spark-kotlin:1.0.0-alpha"
-	compile 'org.json:json:20171018'
-	compileOnly 'org.projectlombok:lombok:1.18.8'
+	implementation ":neurotec-core"	
+	implementation ":neurotec-licensing"
+	implementation ":neurotec-media"
+	implementation ":neurotec-media-processing"
+	implementation ":neurotec-biometrics"
+	implementation ":neurotec-biometrics-client"
+	implementation ":neurotec-devices"
+	implementation "com.sparkjava:spark-core:2.8.0"
+    implementation "com.sparkjava:spark-kotlin:1.0.0-alpha"
+	implementation 'org.json:json:20171018'
+	implementation 'org.projectlombok:lombok:1.18.8'
 	annotationProcessor 'org.projectlombok:lombok:1.18.8'
-	compile project(":bio-utils")
+	implementation project(":bio-utils")
 }
