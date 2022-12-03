@@ -21,7 +21,10 @@ You will require:
 - Gradle
 
 ### Run for windows
-First, you need to install the SDK from [Neurotechnology Standard SDK](https://www.neurotechnology.com/), we tried [Neurotec_Biometric_11_1_SDK_2019-07-07](https://download.neurotechnology.com/Neurotec_Biometric_11_1_SDK_2019-07-07.zip) but should likely work with newer versions and we suggest you to use the latest one.
+First, you need to install the SDK from [Neurotechnology Standard SDK](https://www.neurotechnology.com/), we tried [Neurotec_Biometric_11_1_SDK_2019-07-07](https://download.neurotechnology.com/Neurotec_Biometric_11_1_SDK_2019-07-07.zip) but should likely work with newer versions and we suggest you to use the latest one. 
+
+Note: 
+* also has been tried with version Neurotec_Biometric_12_4_SDK_2022-11-04
 
 Everything must be run the as an **administrator**.
 
