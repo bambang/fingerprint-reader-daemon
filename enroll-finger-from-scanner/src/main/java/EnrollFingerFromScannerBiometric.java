@@ -28,11 +28,11 @@ public final class EnrollFingerFromScannerBiometric {
 		LibraryManager.initLibraryPath();
 
 		// other licenses: FingerClient, FingerFastExtractor
-		final String license = "FingerExtractor";
+		final String license = "FingerClient";
 
-		boolean trialMode = Utils.getTrialModeFlag();
-		NLicenseManager.setTrialMode(trialMode);
-		System.out.println("\tTrial mode: " + trialMode);
+		// boolean trialMode = Utils.getTrialModeFlag();
+		// NLicenseManager.setTrialMode(trialMode);
+		// System.out.println("\tTrial mode: " + trialMode);
 
 		if (!NLicense.obtain("/local", 5000, license)) {
 			System.err.format("Could not obtain license: %s%n", license);
